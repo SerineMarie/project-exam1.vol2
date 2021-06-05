@@ -1,0 +1,148 @@
+:root {
+  --purple: #731943;
+  --black: #000000;
+  --white: #ffff;
+  --greywhite: #fdfdfd;
+  --red: #ff0000;
+  --lightgrey: #f5f5f5;
+  --grey: #dddd;
+  --darkgrey: #707070;
+}
+
+/* CAROUSEL */
+.latest {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: var(--purple);
+  font-size: 1.7em;
+}
+.container {
+  margin: 20px auto;
+}
+
+.carousel {
+  /* height: 550px; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  width: auto;
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  width: 400%;
+  transition: all 0.8s;
+}
+
+.slider section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.control .arrow {
+  font-size: 1.8em;
+  color: var(--purple);
+}
+
+.arrow.left,
+.arrow.arrow.right {
+  margin-left: 30%;
+}
+
+.arrow.left:hover,
+.arrow.right:hover {
+  font-size: 2em;
+}
+
+section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: var(--purple);
+  margin: 0%;
+}
+
+.file {
+  padding: 10px;
+}
+
+.file a {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--black);
+  font-size: 1.5em;
+}
+
+.txt-content p,
+.txt-content img {
+  display: none;
+}
+
+.txt-content .wp-image-231,
+.txt-content .wp-image-237,
+.txt-content .wp-image-331,
+.txt-content .wp-image-282,
+.txt-content .wp-image-269,
+.txt-content .wp-image-262,
+.txt-content .wp-image-281,
+.txt-content .wp-image-260 {
+  display: block;
+}
+
+.short-txt {
+  font-size: 0.8em;
+  padding: 2%;
+}
+
+.allpostbtn {
+  position: absolute;
+  border: 1px solid var(--purple);
+  border-radius: 10%;
+  padding: 2px;
+  margin-left: 2%;
+  top: 85%;
+  font-size: 0.8em;
+}
+.allpostbtn:hover {
+  text-decoration: underline var(--purple);
+}
+
+/* CAROUSEL END */
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 2000px) and (min-width: 1241px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+  .short-txt {
+    font-size: 0.7em;
+  }
+  .allpostbtn {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 359px) {
+  .short-txt {
+    font-size: 0.6em;
+  }
+  .allpostbtn {
+    font-size: 0.6em;
+    top: 90%;
+  }
+}
+
+@media (max-width: 358px) {
+  .short-txt {
+    font-size: 0.6em;
+  }
+  .allpostbtn {
+    display: none;
+  }
+}

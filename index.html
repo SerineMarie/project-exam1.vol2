@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <meta name="description" content="Serine Travels homepage" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Exam 1</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+  </head>
+  <body>
+    <header>
+      <label for="hamburgerMenu" class="hamburgerLabel"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburgerMenu" />
+      <a href="index.html"
+        ><div class="backTitle" aria-label="home-btn">Serine Travels</div></a
+      >
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="allposts.html">Blog</a></li>
+          <li>
+            <a href="https://www.instagram.com/serinetravels/"
+              ><i
+                class="fab fa-instagram-square"
+                aria-label="serinetravels-instagram"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fab fa-youtube-square" aria-label="youtube.com"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="homepage">
+        <div class="loader"></div>
+      </div>
+      <p class="latest">Latest posts</p>
+      <div class="container">
+        <div class="carousel">
+          <div class="slider">
+            <section class="post1 file"></section>
+            <section class="post2 file"></section>
+            <section class="post3 file"></section>
+            <section class="post4 file"></section>
+            <section class="post5 file"></section>
+            <section class="post6 file"></section>
+            <section class="post7 file"></section>
+            <section class="post8 file">
+              <a href="allposts.html"
+                ><div class="allpostbtn">View all posts</div></a
+              >
+            </section>
+          </div>
+          <div class="control">
+            <span class="arrow left" aria-label="move-left"
+              ><i class="fas fa-arrow-left"></i
+            ></span>
+            <span class="arrow right" aria-label="move-right"
+              ><i class="fas fa-arrow-right"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="loadError"></div>
+    </main>
+    <footer>
+      <div class="footer">
+        <a href="contact.html"><p>CONTACT</p></a>
+        <a href="about.html"><p>ABOUT</p></a>
+      </div>
+    </footer>
+    <div class="bottomtags">
+      <p>Photos by: Serine Jørgensen | &copy; 2021 Serine Travels</p>
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/latest-post.js"></script>
+    <script src="js/error.js"></script>
+  </body>
+</html>

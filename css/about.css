@@ -1,0 +1,39 @@
+.wp-image-45 {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutBox .wp-block-media-text__content p {
+  margin-bottom: 30%;
+  padding: 2% 2% 2% 2%;
+  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutTitle {
+  color: var(--purple);
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .wp-image-45 {
+    width: 45%;
+    height: 45%;
+  }
+
+  .aboutBox figure {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+
+  .aboutBox .wp-block-media-text__content {
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+    margin-top: -25%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+    font-size: 1.3em;
+  }
+}

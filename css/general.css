@@ -1,0 +1,226 @@
+body {
+  background-color: var(--greywhite);
+}
+
+:root {
+  --purple: #731943;
+  --black: #000000;
+  --white: #ffff;
+  --greywhite: #fdfdfd;
+  --red: #ff0000;
+  --lightgrey: #f5f5f5;
+  --grey: #dddd;
+  --darkgrey: #707070;
+}
+
+.has-text-align-center {
+  display: none;
+}
+
+h1,
+.heading {
+  font-family: "Montserrat", sans-serif;
+  color: var(--purple);
+  font-size: 2.2em;
+  margin: 2%;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--darkgrey);
+  font-size: 1.2em;
+  margin: 2%;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.date {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--darkgrey);
+}
+
+.loadError {
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  color: var(--purple);
+}
+
+.loadError i {
+  font-size: 1.8em;
+  color: var(--black);
+}
+
+.loader {
+  border: 10px solid var(--purple);
+  border-top: 10px solid var(--darkgrey);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 45%;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*NAVIGATION*/
+
+.backTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: var(--purple);
+}
+
+nav a {
+  font-weight: 600;
+  color: var(--black);
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  margin: 8%;
+  padding-bottom: 10%;
+}
+
+nav a:hover {
+  text-decoration: underline var(--purple);
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+nav {
+  display: none;
+}
+
+#hamburgerMenu {
+  display: none;
+}
+
+#hamburgerMenu:checked ~ nav {
+  position: absolute;
+  display: block;
+  background-color: var(--lightgrey);
+  margin-left: 30%;
+  width: 50%;
+  height: 30%;
+  padding-right: 5%;
+  border-radius: 10px;
+}
+
+.hamburgerLabel {
+  display: block;
+  padding: 1%;
+  font-size: 2.1em;
+  float: right;
+}
+
+/*FOOTER*/
+
+.footer {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+footer a {
+  color: var(--black);
+  margin: 2%;
+}
+
+footer a:hover {
+  text-decoration: underline var(--purple);
+}
+
+.bottomtags {
+  display: flex;
+  justify-content: center;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 1023px) and (min-width: 860px) {
+  #hamburgerMenu:checked ~ nav {
+    width: 20%;
+    height: 28%;
+    margin-left: 70%;
+  }
+}
+
+@media screen and (max-width: 859px) and (min-width: 700px) {
+  #hamburgerMenu:checked ~ nav {
+    width: 20%;
+    height: 25%;
+    margin-left: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 500px) {
+  #hamburgerMenu:checked ~ nav {
+    width: 25%;
+    height: 25%;
+    margin-left: 60%;
+  }
+}
+
+@media screen and (max-width: 499px) and (min-width: 350px) {
+  #hamburgerMenu:checked ~ nav {
+    width: 35%;
+    height: 35%;
+    margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 349px) and (min-width: 300px) {
+  #hamburgerMenu:checked ~ nav {
+    width: 35%;
+    height: 40%;
+    margin-left: 50%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .backTitle {
+    display: none;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  .hamburgerLabel {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  nav a {
+    padding: 5% 15%;
+  }
+}
