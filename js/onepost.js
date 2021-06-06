@@ -5,8 +5,8 @@ const webtitle = document.querySelector("title");
 const contentOnePost = document.querySelector (".onepostContent");
 const footer = document.querySelector("footer")
 
-// const modalImg = document.querySelector(".modalContainer");
-// const show = document.querySelector(".post");
+const modalImg = document.querySelector(".modalContainer");
+const show = document.querySelector(".post");
 
 
 const queryString = document.location.search;
@@ -27,25 +27,25 @@ async function posts(){
             date.innerHTML += `<div class="date">${result.date}<div>`
             post.innerHTML += `<div class="post">${result.content.rendered}</div>`
 
-        // modalImg.style.display = "none";
+        modalImg.style.display = "none";
 
-        // show.onclick = function(){
-        //     contentOnePost.style.display = "none";
-        //     footer.style.display = "none";
-        //     modalImg.style.display = "block";
-        //     modalImg.innerHTML = `
-        //                             <div class="modalContent">${result.content.rendered}</div>
-        //                         `            
+        show.onclick = function(){
+            contentOnePost.style.display = "none";
+            footer.style.display = "none";
+            modalImg.style.display = "block";
+            modalImg.innerHTML = `
+                                    <div class="modalContent">${result.content.rendered}</div>
+                                `            
             
-        // }
+        }
 
 
-        // function closeModal(){
-        //     contentOnePost.style.display = "";
-        //     footer.style.display = "";
-        //     modalImg.innerHTML= "";
-        //     modalImg.style.display = "none";
-        // } modalImg.addEventListener("click", closeModal);
+        function closeModal(){
+            contentOnePost.style.display = "";
+            footer.style.display = "";
+            modalImg.innerHTML= "";
+            modalImg.style.display = "none";
+        } modalImg.addEventListener("click", closeModal);
 
 
     } catch (error){

@@ -106,6 +106,7 @@
 .allpostbtn {
   position: absolute;
   border: 1px solid var(--purple);
+  color: var(--black);
   border-radius: 10%;
   padding: 2px;
   font-size: 0.8em;
