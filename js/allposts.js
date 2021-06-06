@@ -20,7 +20,6 @@ async function allposts(){
         const response = await fetch (url2);
         const result = await response.json();
 
-        console.log(result);
 
         
         post1.innerHTML += `<a href="onepost.html?id=${result[0].id}">

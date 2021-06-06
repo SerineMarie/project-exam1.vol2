@@ -11,7 +11,6 @@ async function index(){
     try{
         const response = await fetch(url)
         const result = await response.json();
-        console.log(result)
         title.innerHTML = `${result[3].title.rendered}`
 
 

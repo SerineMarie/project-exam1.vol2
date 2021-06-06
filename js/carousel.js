@@ -18,6 +18,3 @@ right.addEventListener("click", function(){
 
  });
 
-
-
-

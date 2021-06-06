@@ -7,7 +7,6 @@ async function info (){
     try{
         const response = await fetch(url);
         const result = await response.json();
-        console.log(result)
         title.innerHTML = `${result[1].title.rendered}`
         
         contact.innerHTML = `   <h1 class="contactTitle">${result[1].title.rendered}</h1>
