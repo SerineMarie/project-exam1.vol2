@@ -16,14 +16,14 @@ img {
 
 /*MODAL*/
 
-.overlay {
+/* .overlay {
   position: absolute;
   width: 100%;
   top: 0px;
   left: 0px;
   min-width: 100vh;
   background: rgb(0, 0, 0, 0.9);
-}
+} */
 
 /* .modalContent {
   border: 2px solid var(--darkgrey);
